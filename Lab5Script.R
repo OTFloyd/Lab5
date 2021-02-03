@@ -1,0 +1,6 @@
+install.packages("readxl")
+library(readxl)
+alaska <- read_xlsx(path = "Alaska.xlsx")
+head(alaska)
+str(alaska)
+write.csv(x = alaska, file = "Alaska_fixed.csv", row.names = F)
